@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="card" onclick="Rotate()">
+        <div class="face front">
+            <p class="bank">somebank <span>| Universal Bank</span></p>
+            <p class="number">4441 1144 0000 0000</p>
+            <p class="date">01/24</p>
+            <p class="name">IVAN IVANOV</p>
+            <img src="https://www.pngall.com/wp-content/uploads/2017/05/Visa-Logo-PNG-Image.png" alt="visa" class="visa">
+        </div>
+        <div class="face back">
+            <div class="info">
+                <p>This card is not real and there is no money in it.</p>
+            </div>
+            <div class="stretch"></div>
+            <p class="cvv">123</p>
+        </div>
+    </div>
+    <h3 class="tip">Click to rotate</h3>
+    <script src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 15,
+            speed: 200
+        });
+    </script>
+</body>
+</html>
