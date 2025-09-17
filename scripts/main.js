@@ -8,4 +8,5 @@ function Rotate() {
         card.classList.remove('rotated')
         isRotated = false
     }
+    //
 }
